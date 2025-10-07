@@ -84,29 +84,29 @@ public:
 
     void Print() const {
         if (IsEmpty()) {
-            cout << "Ìàñèâ ïîðîæí³é." << endl;
+            cout << "ÃŒÃ Ã±Ã¨Ã¢ Ã¯Ã®Ã°Ã®Ã¦Ã­Â³Ã©." << endl;
             return;
         }
 
-        cout << "Åëåìåíòè ìàñèâó: ";
+        cout << "Ã…Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã¨ Ã¬Ã Ã±Ã¨Ã¢Ã³: ";
         for (int i = 0; i < Count; ++i) {
             cout << Data[i];
             if (i < Count - 1) cout << ", ";
         }
         cout << endl;
 
-        cout << "Ê³ëüê³ñòü åëåìåíò³â: " << Count << endl;
-        cout << "Âèä³ëåíèé ðîçì³ð: " << Size << endl;
+        cout << "ÃŠÂ³Ã«Ã¼ÃªÂ³Ã±Ã²Ã¼ Ã¥Ã«Ã¥Ã¬Ã¥Ã­Ã²Â³Ã¢: " << Count << endl;
+        cout << "Ã‚Ã¨Ã¤Â³Ã«Ã¥Ã­Ã¨Ã© Ã°Ã®Ã§Ã¬Â³Ã°: " << Size << endl;
     }
 
 
-    T& operator[](int index) // Çâè÷àéíèé ìàñèâ âèêëèêàºòüñÿ äëÿ çì³íè
+    T& operator[](int index) // Ã‡Ã¢Ã¨Ã·Ã Ã©Ã­Ã¨Ã© Ã¬Ã Ã±Ã¨Ã¢ Ã¢Ã¨ÃªÃ«Ã¨ÃªÃ ÂºÃ²Ã¼Ã±Ã¿ Ã¤Ã«Ã¿ Ã§Ã¬Â³Ã­Ã¨
     {
         return Data[index];
     }
 
 
-    const T& operator[](int index) const // Const ìàñèâ âèêëèêàºòüñÿ ò³ëüêè äëÿ ÷èòàííÿ
+    const T& operator[](int index) const // Const Ã¬Ã Ã±Ã¨Ã¢ Ã¢Ã¨ÃªÃ«Ã¨ÃªÃ ÂºÃ²Ã¼Ã±Ã¿ Ã²Â³Ã«Ã¼ÃªÃ¨ Ã¤Ã«Ã¿ Ã·Ã¨Ã²Ã Ã­Ã­Ã¿
     {
         return Data[index];
     }
@@ -126,18 +126,18 @@ int main()
     arr.Add(20);
     arr.Add(30);
 
-    cout << " Äî ñòèñíåííÿ " << endl;
+    cout << " Ã„Ã® Ã±Ã²Ã¨Ã±Ã­Ã¥Ã­Ã­Ã¿ " << endl;
     arr.Print();
 
-    cout << "Îñòàíí³é ³íäåêñ: " << arr.GetUpperBound() << endl;
-    cout << "Ìàñèâ ïîðîæí³é: " << (arr.IsEmpty() ? "Òàê" : "Í³") << endl;
+    cout << "ÃŽÃ±Ã²Ã Ã­Ã­Â³Ã© Â³Ã­Ã¤Ã¥ÃªÃ±: " << arr.GetUpperBound() << endl;
+    cout << "ÃŒÃ Ã±Ã¨Ã¢ Ã¯Ã®Ã°Ã®Ã¦Ã­Â³Ã©: " << (arr.IsEmpty() ? "Ã’Ã Ãª" : "ÃÂ³") << endl;
 
     arr.Compress();
-    cout << "\n Ï³ñëÿ ñòèñíåííÿ " << endl;
+    cout << "\n ÃÂ³Ã±Ã«Ã¿ Ã±Ã²Ã¨Ã±Ã­Ã¥Ã­Ã­Ã¿ " << endl;
     arr.Print();
 
     arr.RemoveAll();
-    cout << "\n Ï³ñëÿ î÷èùåííÿ " << endl;
+    cout << "\n ÃÂ³Ã±Ã«Ã¿ Ã®Ã·Ã¨Ã¹Ã¥Ã­Ã­Ã¿ " << endl;
     arr.Print();
 
 
